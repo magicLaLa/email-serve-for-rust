@@ -47,9 +47,6 @@ async fn main() {
         Err(_) => PASS_WORD.to_string(),
     };
 
-    println!("user_name : {}", user_name);
-    println!("pasword: {}", pasword);
-
     if user_name.is_empty() || pasword.is_empty() {
         panic!("USER or PASS_WORD is Required !");
     }
